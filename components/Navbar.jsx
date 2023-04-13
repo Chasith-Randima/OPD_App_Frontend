@@ -65,13 +65,6 @@ const Navbar = ({ setSideBar, showSideBar }) => {
   return (
     <>
       <nav className="w-full h-auto grid grid-cols-2 p-2 bg-blue-400 text-white gap-2">
-        {/* <nav
-        className={
-          router.asPath == "/mainPage"
-            ? "w-full h-auto grid grid-cols-3 p-8 bg-blue-400 text-white gap-2"
-            : "w-full h-auto grid grid-cols-2 p-8 bg-blue-400 text-white gap-2"
-        }
-      > */}
         <div className=" font-bold text-xl w-1/3 bg-blue-200 rounded">
           <img src="/img/opd-logo.png" className="w-full h-20" />
         </div>

@@ -303,7 +303,6 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/ticket/User"
             onClick={() => router.push("/ticket/staff/AllTickets")}
