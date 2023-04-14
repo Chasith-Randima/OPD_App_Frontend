@@ -9,7 +9,7 @@ const Appointment = ({ appointment }) => {
   const handleDelete = (id) => {
     // e.preventDefault();
     console.log("clickkedd....", id);
-    // e.preventDefault();
+
     let token;
 
     if (getCookie("token_patient")) {

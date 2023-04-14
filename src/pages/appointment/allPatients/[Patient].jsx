@@ -12,7 +12,6 @@ import SearchPatientAppointments from "components/search/SearchPatientAppointmen
 import Message from "components/Message";
 
 const Patient = ({ data, query }) => {
-  // console.log(query.Patient);
   const [allData, setAllData] = useState(data);
   const [show, setShow] = useState(false);
   const [limit, setLimit] = useState(9);

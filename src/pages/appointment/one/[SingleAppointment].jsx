@@ -89,7 +89,6 @@ const SingleAppointment = ({ data }) => {
   }, []);
 
   useEffect(() => {
-    // console.log(data);
     // const newDate = new Date();
     // console.log(data.doc.appointmentDate.split("T")[0]);
     console.log(new Date(new Date().toISOString().split("T")[0]));

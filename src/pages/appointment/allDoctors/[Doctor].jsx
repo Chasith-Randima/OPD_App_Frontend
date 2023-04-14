@@ -8,7 +8,6 @@ import Message from "components/Message";
 
 import SearchDoctorAppointments from "components/search/SearchDoctorAppointments";
 const Doctor = ({ data, query }) => {
-  // console.log(query.Patient);
   const [allData, setAllData] = useState(data);
   const [show, setShow] = useState(false);
   const [limit, setLimit] = useState(9);
