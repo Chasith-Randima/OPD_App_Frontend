@@ -4,7 +4,7 @@ import Ticket from "components/Ticket";
 import { allTickets } from "actions/ticket";
 // import SearchBar from "components/SearchBar";
 import { BsFillFilterSquareFill } from "react-icons/bs";
-// import from "react";
+
 import SearchTickets from "components/search/SearchTickets";
 import Message from "components/Message";
 

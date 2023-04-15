@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 const Ticket = ({ ticket, type }) => {
   const router = useRouter();
-  // console.log(ticket.doctors[0].hospitals[0].name);
+
   return (
     <>
       <div className="grid grid-cols-7  md:grid-cols-9 p-4 border-b-2 border-gray-200 hover:bg-gray-300 transition-all rounded-xl">

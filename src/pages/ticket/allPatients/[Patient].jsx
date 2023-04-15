@@ -15,7 +15,7 @@ const Patient = ({ data, query }) => {
   const [totalPages, setTotalPages] = useState(
     Math.ceil(allData.totalCount / limit)
   );
-  // console.log(allData, totalPages);
+
   const [active, setActive] = useState();
   const [appointmentDate1, setAppointmentDate1] = useState();
   const [appointmentDate2, setAppointmentDate2] = useState();

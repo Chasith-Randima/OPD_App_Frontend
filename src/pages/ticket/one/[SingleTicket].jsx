@@ -30,7 +30,7 @@ const SingleTicket = ({ data }) => {
       .then((data) => {
         if (data.status && data.status == "success") {
           console.log(data);
-          // return data;
+ 
 
           setAlert({
             ...alert,

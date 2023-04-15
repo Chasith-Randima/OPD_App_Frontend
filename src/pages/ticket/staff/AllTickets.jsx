@@ -90,7 +90,7 @@ const AllTickets = () => {
       //   id,
     };
 
-    // console.log(params, "submit clicked...");
+
     await allTicketsStaff(params)
       .then((data) => {
         console.log(data);

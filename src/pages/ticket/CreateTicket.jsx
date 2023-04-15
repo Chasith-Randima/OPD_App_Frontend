@@ -3,7 +3,7 @@ import { createTicket } from "actions/ticket";
 import Layout from "components/Layout";
 import { withRouter } from "next/router";
 import React, { useState } from "react";
-// import  from "react";
+
 import Message from "components/Message";
 import { useRouter } from "next/router";
 import { updateAppointment } from "actions/appointment";
