@@ -11,7 +11,6 @@ const User = ({ router }) => {
     name: "",
     hospitalName: "",
     email: "",
-    // formData: "",
   });
 
   const { name, hospitalName, email, images } = values;

@@ -14,7 +14,6 @@ const Doctor = ({ data, query }) => {
     email: "",
     doctorId: "",
     images: "",
-    // formData: "",
   });
 
   const [alert, setAlert] = useState({

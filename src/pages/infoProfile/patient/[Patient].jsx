@@ -13,7 +13,6 @@ import Message from "components/Message";
 
 const Patient = ({ query, data }) => {
   console.log(query, data);
-  //   const router = useRouter();
 
   const [values, setValues] = useState({
     name: "",
