@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import QRCode from "qrcode";
 const GenerateQR = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   const [imageUrl, setImageUrl] = useState("");
   const generateQrCode = async () => {
     try {
