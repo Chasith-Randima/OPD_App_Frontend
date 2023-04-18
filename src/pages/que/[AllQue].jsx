@@ -174,7 +174,6 @@ const AllQue = ({ data, query }) => {
     };
     console.log(params, "submitting---------------------------------------");
 
-    // console.log(params, "submit clicked...");
     await allAppointments(params)
       .then((data) => {
         console.log(data);
