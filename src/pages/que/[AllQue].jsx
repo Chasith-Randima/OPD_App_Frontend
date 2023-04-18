@@ -1,9 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "components/Layout";
 import Appointment from "components/Appointment";
 import { allAppointments } from "actions/appointment";
 import SearchBar from "components/SearchBar";
-import { useState } from "react";
+// import { useState } from "react";
 import { BsFillFilterSquareFill } from "react-icons/bs";
 import QueAppointment from "components/QueAppointment";
 import Message from "components/Message";

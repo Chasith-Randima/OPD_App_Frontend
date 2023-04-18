@@ -1,6 +1,6 @@
 import { getCookie } from "actions/auth";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { deleteAppointment, deleteAppointmentUser } from "actions/appointment";
 const Appointment = ({ appointment }) => {

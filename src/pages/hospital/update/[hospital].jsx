@@ -1,6 +1,6 @@
+import React, { useState, useEffect } from "react";
 import { updateHospital } from "actions/hospital";
 import { oneHospital } from "actions/hospital";
-import React, { useState, useEffect } from "react";
 // import { withRouter } from "next/router";
 import Layout from "components/Layout";
 import { useRouter } from "next/router";

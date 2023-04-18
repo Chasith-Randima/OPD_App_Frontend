@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
-import { isAuth } from "actions/auth";
+// import { isAuth } from "actions/auth";
 import { isMobile, isBrowser } from "react-device-detect";
 
 const Layout = ({ children }) => {

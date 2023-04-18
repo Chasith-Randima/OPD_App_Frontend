@@ -2,7 +2,7 @@ import Layout from "components/Layout";
 import React, { useState, useEffect } from "react";
 import HospitalCard from "components/HospitalCard";
 import { allHospitals, searchHospitals } from "actions/hospital";
-import SearchHospitals from "components/search/SearchHospitals";
+// import SearchHospitals from "components/search/SearchHospitals";
 import Message from "components/Message";
 
 const MainPage = ({ data }) => {

@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "components/Layout";
 import { withRouter } from "next/router";
-import { useState, useEffect } from "react";
+// importfrom "react";
 import { getCookie } from "actions/auth";
 import { oneTicket, updateTicket } from "actions/ticket";
 import Router from "next/router";

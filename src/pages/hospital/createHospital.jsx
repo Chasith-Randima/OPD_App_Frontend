@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "components/Layout";
 import { withRouter } from "next/router";
 import { getCookie } from "actions/auth";
@@ -14,7 +14,7 @@ import {
   allDoctors,
   getAllDoctors,
 } from "actions/doctor";
-import { useState, useEffect } from "react";
+// import from "react";
 
 const CreateHospital = ({ router }) => {
   const [values, setValues] = useState({

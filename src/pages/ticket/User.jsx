@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "components/Layout";
 import Ticket from "components/Ticket";
 import { allTickets } from "actions/ticket";
 // import SearchBar from "components/SearchBar";
 import { BsFillFilterSquareFill } from "react-icons/bs";
-import { useState, useEffect } from "react";
+// import from "react";
 import SearchTickets from "components/search/SearchTickets";
 import Message from "components/Message";
 
