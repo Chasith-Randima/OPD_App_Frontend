@@ -82,7 +82,6 @@ const Patient = ({ data, query }) => {
       id,
     };
 
-    // console.log(params, "submit clicked...");
     await allTicketsRelated(params)
       .then((data) => {
         if (data.status && data.status == "success") {

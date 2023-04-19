@@ -83,7 +83,6 @@ const Patient = ({ data, query }) => {
     console.log("page changed...", page);
 
     handleSubmit();
-    // console.log(allData);
   }, [page]);
 
   const handleSubmit = async (e) => {
