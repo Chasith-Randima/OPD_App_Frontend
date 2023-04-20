@@ -135,8 +135,6 @@ const Patient = ({ data, query }) => {
             setAlert({ ...alert, success: false, message: "" });
           }, 1500);
         }
-
-        // return { data };
       })
       .catch((err) => {
         console.log(err);
