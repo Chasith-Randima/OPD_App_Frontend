@@ -6,6 +6,7 @@ import AppointmentsByTimeLine from "../../../../components/charts/AppointmentsBy
 import AppointmentsByDateLine from "components/charts/AppointmentsByDateLine";
 import AppointmentCountByYearLine from "components/charts/AppointmentCountByYearLine";
 
+// single hospital analytics page
 const HospitalAnalytics = () => {
   const router = useRouter();
   let hospitalId = router.query.hospitalAnalytics;
