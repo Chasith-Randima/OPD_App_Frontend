@@ -20,7 +20,6 @@ const AllAnalytics = () => {
               All Appointments By Time Of the Day
             </h2>
             <AllAppointmentsByTimeLine />
-            {/* {hospitalId && <AppointmentsByTimeLine hospitalId={hospitalId} />} */}
           </div>
           <div className="text-center md:w-2/3 md:mx-auto">
             <h2 className="text-gray-400 font-semibold text-xl my-2">
