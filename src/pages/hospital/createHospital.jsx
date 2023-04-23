@@ -14,7 +14,6 @@ import {
   allDoctors,
   getAllDoctors,
 } from "actions/doctor";
-// import from "react";
 
 const CreateHospital = ({ router }) => {
   const [values, setValues] = useState({

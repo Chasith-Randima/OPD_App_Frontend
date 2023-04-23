@@ -107,7 +107,7 @@ const Hospital = ({ data }) => {
               </div>
               {/* <div>
                 <h2 className="text-gray-400 text-xl font-semibold my-2">
-                  Total Staff : 6
+                  Total Staff : 9
                 </h2>
               </div> */}
               {getCookie("token_patient") && (

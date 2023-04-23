@@ -18,7 +18,7 @@ import Message from "components/Message";
 
 const Index = () => {
   // const Index = ({ data, token, cookie }) => {
-  //   console.log(token, cookie);
+
   const [allData, setAllData] = useState();
   const [show, setShow] = useState(false);
   const [limit, setLimit] = useState(9);
