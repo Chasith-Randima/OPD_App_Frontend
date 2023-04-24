@@ -178,7 +178,6 @@ const Index = () => {
           {alert.loading && (
             <Message
               message={"Loading...Please Waite..."}
-              // alert={"loading"}
               resetAlert={resetAlert}
             />
           )}

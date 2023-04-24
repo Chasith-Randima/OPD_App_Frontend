@@ -63,11 +63,7 @@ const User = () => {
     <Layout>
       <div className="flex justify-center">
         {alert.error && (
-          <Message
-            message={alert.message}
-            // alert={"error"}
-            resetAlert={resetAlert}
-          />
+          <Message message={alert.message} resetAlert={resetAlert} />
         )}
         {alert.success && (
           <Message

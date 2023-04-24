@@ -27,7 +27,7 @@ const Doctor = () => {
   const handleSubmit = async () => {
     console.log(role);
     setAlert({ ...alert, loading: true });
-    // formData.append("role", role);
+
     let token = getCookie("token_user");
     await updateDoctorRole(router.query.doctor, { role: role }, token)
       .then((data) => {
