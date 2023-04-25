@@ -66,11 +66,7 @@ const User = () => {
           <Message message={alert.message} resetAlert={resetAlert} />
         )}
         {alert.success && (
-          <Message
-            message={alert.message}
-            // alert={"success"}
-            resetAlert={resetAlert}
-          />
+          <Message message={alert.message} resetAlert={resetAlert} />
         )}
         {alert.loading && (
           <Message
