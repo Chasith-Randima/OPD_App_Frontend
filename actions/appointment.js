@@ -18,7 +18,7 @@ export const allAppointments = (paramsData) => {
 
   return axios(url, {
     method: "GET",
-    // params: { ...query },
+
     params: {
       limit: paramsData.limit,
       page: paramsData.page,
