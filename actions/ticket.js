@@ -56,7 +56,6 @@ export const allTicketsStaff = (paramsData) => {
     },
   })
     .then((response) => {
-      //   console.log(response.data);
       return response.data;
     })
     .catch((err) => {
