@@ -16,7 +16,7 @@ export const allHospitals = (paramsData) => {
 
   return axios(url, {
     method: "GET",
-    // params: { ...query },
+
     params: {
       page: paramsData.page,
       limit: paramsData.limit,

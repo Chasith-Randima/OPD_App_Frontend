@@ -14,7 +14,6 @@ export const allAppointments = (paramsData) => {
   let query = queryString.stringify(paramsData);
   console.log(query);
   let url = `${API}/appointments`;
-  // console.log(paramsData);
 
   return axios(url, {
     method: "GET",
