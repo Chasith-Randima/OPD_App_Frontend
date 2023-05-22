@@ -7,6 +7,7 @@ import SearchBar from "components/SearchBar";
 import { BsFillFilterSquareFill } from "react-icons/bs";
 import QueAppointment from "components/QueAppointment";
 import Message from "components/Message";
+import moment from "moment";
 
 const AllQue = ({ data, query }) => {
   console.log(query);
@@ -118,20 +119,48 @@ const AllQue = ({ data, query }) => {
       e.preventDefault();
     }
     setAlert({ ...alert, loading: true });
+    let tempdate = new Date();
 
-    let date = new Date();
+    let date = tempdate.toISOString().split("T")[0];
+    let date2 = new Date(tempdate.setDate(tempdate.getDate() + 1))
+      .toISOString()
+      .split("T")[0];
+    console.log(date, date2, "-----------------------------------");
+    // let date = moment().date();
+    // let date2 = moment().add(1, "days");
+    // console.log(date.toString(), date2.toString(), "from moment");
+
+    // let date = new Date();
+    // let date1 = date;
+    // let date2 = date.setDate(date.getDate() + 1);
+    // console.log(date, date2, "from date");
+    // date = date.setHours(0, 0, 0, 0);
+    // date2 = date2.setHours(0, 0, 0, 0);
+    // console.log(
+    //   date.toISOString().split("T")[0],
+    //   date2.toISOString().split("T")[0],
+    //   "from date"
+    // );
+    // console.log(
+    //   new Date(date.setHours(0, 0, 0, 0)).toISOString(),
+    //   new Date(date2.setHours(0, 0, 0, 0)).toISOString(),
+    //   "from date"
+    // );
     //   console.log(date.setHours(0, 0, 0));
     //   console.log(date.setDate(date.getDate() + 1));
-    console.log(date.setHours(0, 0, 0, 0));
-    console.log(date.toISOString());
-    let date2 = new Date();
-    console.log(date2.setHours(0, 0, 0, 0));
-    date2 = date2.setDate(date.getDate() + 1);
-    console.log(typeof date, typeof date2);
-    date = date.toISOString();
-    console.log(new Date(date2).toISOString());
-    date2 = new Date(date2).toISOString();
+    // console.log(date.setHours(0, 0, 0, 0));
+    // console.log(date.toISOString());
+    // let date2 = new Date();
+    // // console.log(date2.setHours(0, 0, 0, 0));
+    // date2 = date2.setDate(date.getDate() + 1);
+    // date2 = date2.setHours(0, 0, 0, 0);
+    // // console.log(typeof date, typeof date2);
+    // date = date.setHours(0, 0, 0, 0);
+    // date = date.toISOString();
+    // // console.log(new Date(date2).toISOString());
+    // date2 = new Date(date2).toISOString();
 
+    // console.log(date, date2);
     let params = {
       limit,
       page,
@@ -143,6 +172,7 @@ const AllQue = ({ data, query }) => {
       qued: true,
       hospitals: query.AllQue,
     };
+    console.log(params, "submitting---------------------------------------");
 
     // console.log(params, "submit clicked...");
     await allAppointments(params)
