@@ -10,7 +10,7 @@ import Message from "components/Message";
 const User = ({ data }) => {
   const [allData, setAllData] = useState(data);
   const [show, setShow] = useState(false);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(9);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(
     Math.ceil(allData.totalCount / limit)
