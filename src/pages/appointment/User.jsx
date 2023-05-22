@@ -264,18 +264,6 @@ const User = ({ data }) => {
                         </div>
                       </div>
                     </div>
-                    {/* <div className="my-2">
-                      <label class="text-gray-600 mb-2 block">
-                        Appointment Time
-                      </label>
-                      <input
-                        type="time"
-                        // value={appointmentTime}
-                        // onChange={handleChange("appointmentTime")}
-                        class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400"
-                        placeholder="Enter your Date Of Birth"
-                      />
-                    </div> */}
                   </div>
                 </div>
                 <div className="text-center col-span-3 my-5   ">

@@ -53,7 +53,8 @@ const AllAppointmentsByTimeLine = () => {
           });
 
           window.setTimeout(() => {
-            setAlert({ ...alert, success: false, message: "" });
+            // setAlert({ ...alert, success: false, message: "" });
+            resetAlert();
           }, 1000);
         }
       })

@@ -21,7 +21,7 @@ const Index = () => {
   //   console.log(token, cookie);
   const [allData, setAllData] = useState();
   const [show, setShow] = useState(false);
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(9);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState();
   //   const [totalPages, setTotalPages] = useState(
@@ -129,7 +129,8 @@ const Index = () => {
           });
 
           window.setTimeout(() => {
-            setAlert({ ...alert, success: false, message: "" });
+            // setAlert({ ...alert, success: false, message: "" });
+            resetAlert();
           }, 1000);
         }
 

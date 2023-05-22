@@ -74,7 +74,7 @@ const CreateAppointment = ({ router }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setAlert({ ...alert, loading: true });
+    setAlert({ ...alert, loading: true, message: "making the appointment..." });
     let token = getCookie("token_patient");
 
     let data = {
@@ -101,7 +101,9 @@ const CreateAppointment = ({ router }) => {
             success: true,
           });
 
-          window.setTimeout(() => {}, 1500);
+          window.setTimeout(() => {
+            resetAlert();
+          }, 1000);
         }
       })
       .catch((err) => {
@@ -201,7 +203,7 @@ const CreateAppointment = ({ router }) => {
                   </label>
                   <input
                     type="time"
-                    value={"14:00"}
+                    value={appointmentTime}
                     min="09:00"
                     max="18:00"
                     onChange={handleChange("appointmentTime")}

@@ -14,7 +14,7 @@ const Index = () => {
   //   console.log(token, cookie);
   const [allData, setAllData] = useState();
   const [show, setShow] = useState(false);
-  const [limit, setLimit] = useState(2);
+  const [limit, setLimit] = useState(9);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState();
   //   const [totalPages, setTotalPages] = useState(
@@ -80,10 +80,7 @@ const Index = () => {
   // ---------------pagination--------------------------
 
   useEffect(() => {
-    console.log("page changed...", page);
-
     handleSubmit();
-    // console.log(allData);
   }, [page]);
 
   const handleSubmit = async (e) => {

@@ -50,6 +50,7 @@ const Hospital = ({ data }) => {
   useEffect(() => {
     appointmentsCountByTime()
       .then((data) => {
+        console.log(data, "appointment count by time.....");
         if (data.status && data.status == "success") {
           setAppointmentCount(data.countArray);
           setAlert({
@@ -62,7 +63,7 @@ const Hospital = ({ data }) => {
 
           window.setTimeout(() => {
             resetAlert();
-          }, 1500);
+          }, 1000);
         }
       })
       .catch((err) => {
@@ -81,7 +82,7 @@ const Hospital = ({ data }) => {
       <Layout>
         <div className="mt-5 mr-5">
           <h2 className="text-gray-400 text-xl font-semibold my-1">
-            {data.doc.name}
+            {data && data.doc.name}
           </h2>
           <div className="grid md:grid-cols-5">
             <div className=" md:col-span-3 overflow-hidden shadow-xl ">
@@ -92,16 +93,16 @@ const Hospital = ({ data }) => {
                 <h2 className="text-gray-400 text-xl font-semibold my-1">
                   Description
                 </h2>
-                <p className="text-lg">{data.doc.summary}</p>
+                <p className="text-lg">{data && data.doc.summary}</p>
               </div>
               <div>
                 <h2 className="text-gray-400 text-xl font-semibold my-2">
-                  Total Appointments : {data.doc.appointments.length}
+                  Total Appointments : {data && data.doc.appointments.length}
                 </h2>
               </div>
               <div>
                 <h2 className="text-gray-400 text-xl font-semibold my-2">
-                  Total Doctors : {data.doc.doctors.length}
+                  Total Doctors : {data && data.doc.doctors.length}
                 </h2>
               </div>
               {/* <div>
@@ -246,7 +247,7 @@ const Hospital = ({ data }) => {
             </div>
           </div> */}
         </div>
-        {console.log(checkAuth)}
+        {/* {console.log(checkAuth)} */}
         {checkAuth.auth && (
           <>
             <div>

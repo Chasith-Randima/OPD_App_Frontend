@@ -47,7 +47,7 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/mainPage"
             onClick={() => router.push("/mainPage")}
@@ -79,7 +79,7 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href={`/appointment/allPatients/${patientId}`}
             onClick={() => router.push(`/appointment/allPatients/${patientId}`)}
@@ -95,7 +95,7 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href={`/ticket/allPatients/${patientId}`}
             onClick={() => router.push(`/ticket/allPatients/${patientId}`)}
@@ -112,7 +112,7 @@ const Sidebar = ({ showSideBar }) => {
                 : "text-black bg-gray-300"
             }`}
           >
-            {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+            {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
             <h2
               // href={`/profile/onePatient/${patientId}`}
               onClick={() => router.push(`/profile/onePatient/${patientId}`)}
@@ -135,10 +135,10 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             onClick={() => router.push("/mainPage")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Hospitals
           </h2>
@@ -154,7 +154,7 @@ const Sidebar = ({ showSideBar }) => {
           <h2
            
             onClick={() => router.push("/que/AllQue")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Que
           </h2>
@@ -166,11 +166,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/que/AllQue"
             onClick={() => router.push("/qr/ScanQR")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Scan QR
           </h2>
@@ -182,11 +182,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href={`/appointment/allDoctors/${doctorId}`}
             onClick={() => router.push(`/appointment/allDoctors/${doctorId}`)}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Appointments
           </h2>
@@ -198,11 +198,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href={`/ticket/allDoctors/${doctorId}`}
             onClick={() => router.push(`/ticket/allDoctors/${doctorId}`)}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Tickets
           </h2>
@@ -215,11 +215,11 @@ const Sidebar = ({ showSideBar }) => {
                 : "text-black bg-gray-300"
             }`}
           >
-            {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+            {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
             <h2
               // href={`/profile/oneDoctor/${doctorId}`}
               onClick={() => router.push(`/profile/oneDoctor/${doctorId}`)}
-              className="my-1 ml-2 text-xl"
+              className="my-1 ml-2 text-xl cursor-pointer"
             >
               Profile
             </h2>
@@ -238,11 +238,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             //  href="/mainPage"
             onClick={() => router.push(`/mainPage`)}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Hospitals
           </h2>
@@ -258,7 +258,7 @@ const Sidebar = ({ showSideBar }) => {
           <h2
            
             onClick={() => router.push("/que/AllQue")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Que
           </h2>
@@ -271,11 +271,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/que/AllQue"
             onClick={() => router.push("/qr/ScanQR")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Scan QR
           </h2>
@@ -287,11 +287,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/appointment/User"
             onClick={() => router.push("/appointment/User")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Appointments
           </h2>
@@ -303,11 +303,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/ticket/User"
             onClick={() => router.push("/ticket/User")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Tickets
           </h2>
@@ -320,11 +320,11 @@ const Sidebar = ({ showSideBar }) => {
                 : "text-black bg-gray-300"
             }`}
           >
-            {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+            {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
             <h2
               // href={`/profile/oneUser/${userId}`}
               onClick={() => router.push(`/profile/oneUser/${userId}`)}
-              className="my-1 ml-2 text-xl"
+              className="my-1 ml-2 text-xl cursor-pointer"
             >
               Profile
             </h2>
@@ -343,11 +343,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/mainPage"
             onClick={() => router.push("/mainPage")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Hospitals
           </h2>
@@ -363,7 +363,7 @@ const Sidebar = ({ showSideBar }) => {
           <h2
             href="/que/AllQue"
             onClick={() => router.push("/que/AllQue")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Que
           </h2>
@@ -376,11 +376,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/que/AllQue"
             onClick={() => router.push("/qr/ScanQR")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Scan QR
           </h2>
@@ -392,11 +392,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/main/Doctor"
             onClick={() => router.push("/appointment/User")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Appointments
           </h2>
@@ -408,33 +408,16 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             href="/main/User"
             onClick={() => router.push("/ticket/User")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Tickets
           </h2>
         </div>
-        {userId && (
-          <div
-            className={`  my-2 font-medium p-2 w-full  rounded-md  hover:bg-blue-300 hover:text-white transition-all ${
-              router.asPath == `/profile/oneUser/${userId}`
-                ? "bg-blue-300 text-white"
-                : "text-black bg-gray-300"
-            }`}
-          >
-            {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
-            <h2
-              // href={`/profile/onePatient/${userId}`}
-              onClick={() => router.push(`/profile/oneUser/${userId}`)}
-              className="my-1 ml-2 text-xl"
-            >
-              Profile
-            </h2>
-          </div>
-        )}
+
         <div
           className={`  my-2 font-medium p-2 w-full  rounded-md  hover:bg-blue-300 hover:text-white transition-all ${
             router.asPath == "/patients"
@@ -442,11 +425,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             href="/patients"
             onClick={() => router.push("/patients")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             All Patients
           </h2>
@@ -458,11 +441,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             //  href="/users"
             onClick={() => router.push("/users")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             All Users
           </h2>
@@ -474,11 +457,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             // href="/hospital/allHospitals"
             onClick={() => router.push("/hospital/allHospitals")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             All Hospitals
           </h2>
@@ -490,11 +473,11 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             //  href="/doctors/"
             onClick={() => router.push("/doctors")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             All Doctors
           </h2>
@@ -506,15 +489,33 @@ const Sidebar = ({ showSideBar }) => {
               : "text-black bg-gray-300"
           }`}
         >
-          {/* <h2 className="my-1 ml-2 text-xl">page 1</h2> */}
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
           <h2
             //  href="/doctors/"
             onClick={() => router.push("/Analytics/AllAnalytics")}
-            className="my-1 ml-2 text-xl"
+            className="my-1 ml-2 text-xl cursor-pointer"
           >
             Analytics
           </h2>
         </div>
+        {userId && (
+          <div
+            className={`  my-2 font-medium p-2 w-full  rounded-md  hover:bg-blue-300 hover:text-white transition-all ${
+              router.asPath == `/profile/oneUser/${userId}`
+                ? "bg-blue-300 text-white"
+                : "text-black bg-gray-300"
+            }`}
+          >
+            {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
+            <h2
+              // href={`/profile/onePatient/${userId}`}
+              onClick={() => router.push(`/profile/oneUser/${userId}`)}
+              className="my-1 ml-2 text-xl cursor-pointer"
+            >
+              Profile
+            </h2>
+          </div>
+        )}
       </div>
     );
   };
