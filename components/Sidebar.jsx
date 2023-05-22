@@ -298,6 +298,22 @@ const Sidebar = ({ showSideBar }) => {
         </div>
         <div
           className={`  my-2 font-medium p-2 w-full  rounded-md  hover:bg-blue-300 hover:text-white transition-all ${
+            router.asPath == "/ticket/staff/AllTickets"
+              ? "bg-blue-300 text-white"
+              : "text-black bg-gray-300"
+          }`}
+        >
+          {/* <h2 className="my-1 ml-2 text-xl cursor-pointer">page 1</h2> */}
+          <h2
+            // href="/ticket/User"
+            onClick={() => router.push("/ticket/staff/AllTickets")}
+            className="my-1 ml-2 text-xl cursor-pointer"
+          >
+            Tickets
+          </h2>
+        </div>
+        <div
+          className={`  my-2 font-medium p-2 w-full  rounded-md  hover:bg-blue-300 hover:text-white transition-all ${
             router.asPath == "/ticket/User"
               ? "bg-blue-300 text-white"
               : "text-black bg-gray-300"
@@ -309,7 +325,7 @@ const Sidebar = ({ showSideBar }) => {
             onClick={() => router.push("/ticket/User")}
             className="my-1 ml-2 text-xl cursor-pointer"
           >
-            Tickets
+            All Tickets
           </h2>
         </div>
         {userId && (

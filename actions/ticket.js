@@ -37,6 +37,33 @@ export const allTickets = (paramsData) => {
       return err;
     });
 };
+export const allTicketsStaff = (paramsData) => {
+  let url = `${API}/tickets`;
+
+  return axios(url, {
+    method: "GET",
+    // params: { ...query },
+    params: {
+      limit: paramsData.limit,
+      page: paramsData.page,
+      active: paramsData.active,
+
+      "appointmentDate[gte]": paramsData.appointmentDate1,
+      "appointmentDate[lte]": paramsData.appointmentDate2,
+      hospitalName: paramsData.hospitalName,
+      hospitals: paramsData.hospitals,
+      // sort: paramsData.sort,
+    },
+  })
+    .then((response) => {
+      //   console.log(response.data);
+      return response.data;
+    })
+    .catch((err) => {
+      console.log(err);
+      return err;
+    });
+};
 export const allTicketsRelated = (paramsData) => {
   console.log(paramsData);
 
