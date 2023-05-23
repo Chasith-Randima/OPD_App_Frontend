@@ -47,7 +47,7 @@ const SearchDoctors = () => {
           value={search}
           onChange={handleChange("search")}
           className="w-full p-2 border-2 border-gray-400 rounded text-lg font-semibold text-gray-600"
-          placeholder="Search patients"
+          placeholder="Search Doctors"
         />
         <div className="absolute z-100   h-auto pb-10 bg-gray-200 mr-10 rounded">
           {/* {console.log(data.data)} */}
