@@ -188,9 +188,9 @@ const Hospital = ({ data, query }) => {
                   <div className="border-2 border-gray-200 rounded-xl p-2 ">
                     <div className="grid grid-cols-2 gap-2">
                       <div className="col-span-1">
-                        <label class="text-gray-600 mb-2 block my-2">
-                          Hospital Name
-                        </label>
+                        {/* <label class="text-gray-600 mb-2 block my-2">
+                          Title
+                        </label> */}
                         <input
                           type="text"
                           value={hospitalName}

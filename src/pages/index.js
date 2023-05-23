@@ -70,7 +70,7 @@ export default function Home() {
                     onClick={() => router.push("/auth/users/LogIn")}
                     className="w-2/3 pd-10 text-xl bg-blue-400 rounded-full mx-auto"
                   >
-                    Staff Login
+                    Staff/Admin Login
                   </h2>
                 </div>
               </div>
